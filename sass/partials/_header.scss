@@ -1,0 +1,99 @@
+header {
+    max-width: 100%;
+    min-height: 72px;
+    background-color: #000000;
+    display: block;
+    position: relative;
+
+    .container-fluid {
+        display: block;
+        overflow: hidden;
+
+        .logo {
+            max-height: 24px;
+            max-width: 110px;
+            line-height: 77px;
+        }
+
+        nav {
+            display: block;
+            line-height: 42px;
+            padding: none;
+
+            li {
+                margin: 0 10px 0 0px;
+                position: relative;
+
+                &:nth-child(4) {
+                    pointer-events: none;
+
+                    &::after {
+                        content: "";
+                        height: 2px;
+                        width: 58px;
+                        position: absolute;
+                        bottom: 5px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: block;
+                        overflow: hidden;
+                        background-color: #ffffff;
+                        pointer-events: none;
+
+                        @media (max-width: 991px) {
+                            display: none;
+
+                        }
+                    }
+                }
+
+                a {
+                    color: #ffffff;
+                    font-family: 'PT Sans Narrow', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: #a7a6a6;
+                    }
+                }
+            }
+        }
+
+        .col-3 {
+            line-height: 72px;
+
+            .iconOpen {
+                min-height: 14px;
+                min-width: 14px;
+
+                @media (max-width: 991px) {
+                    float: right;
+                }
+
+                @media (max-width: 345px) {
+                    display: none;
+                }
+            }
+
+            .hOpen {
+                margin: 0 0 0 15px;
+                color: #a7a6a6;
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                text-transform: uppercase;
+
+                @media (max-width: 991px) {
+                    float: right !important;
+                    margin: 0 10px 0 0;
+                }
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

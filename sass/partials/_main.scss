@@ -1,0 +1,382 @@
+main {
+    .topMain {
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        .topTxt {
+            margin: 40px 0 0 0;
+            font-size: 30px;
+            color: #000000;
+            font-weight: 400;
+            font-family: 'PT Sans Narrow', sans-serif;
+
+            @media (max-width: 375px) {
+                font-size: 25px;
+            }
+        }
+
+        .navMain {
+            position: relative;
+            display: block;
+            overflow: visible;
+            margin: 20px 15px 0 0;
+            font-size: 14px;
+            color: #000000;
+            font-weight: 700;
+            font-family: 'PT Sans Narrow', sans-serif;
+
+            @media (max-width: 375px) {
+                font-size: 13px;
+            }
+
+            a {
+                color: #000000;
+                font-weight: 700;
+            }
+
+            :nth-child(2) {
+                margin: 0 30px 0 30px;
+                position: relative;
+                color: #000000;
+
+                &::before {
+                    content: "";
+                    height: 10px;
+                    width: 10px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 3px;
+                    right: 59px;
+                    display: block;
+                    overflow: visible;
+                    background-color: #000000;
+                    pointer-events: none;
+                }
+
+                &::after {
+                    content: "";
+                    height: 10px;
+                    width: 10px;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 3px;
+                    left: 59px;
+                    display: block;
+                    overflow: visible;
+                    background-color: #000000;
+                    pointer-events: none;
+                }
+            }
+
+            :nth-child(3) {
+                color: #94908c;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+
+        .col-md-3 {
+            display: block;
+
+            @media (max-width: 768px) {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            .prod {
+                @media (max-width: 768px) {
+                    display: inline-block;
+                    width: 50%;
+                    margin: 0 auto;
+                    padding-bottom: 50px;
+                }
+
+                p {
+                    margin: 50px 0 0 0;
+                    font-size: 24px;
+                    color: #000000;
+                    font-weight: 400;
+                    font-family: 'PT Sans Narrow', sans-serif;
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        width: 50%;
+                        margin: 0 auto;
+                        padding: 50px 0 0 0;
+                    }
+
+                    @media (max-width: 375px) {
+                        font-size: 15px;
+                    }
+                }
+
+                .form-check {
+                    margin: 20px 0 0px 0;
+
+                    @media (max-width: 768px) {
+                        width: 50%;
+                        margin: 0 auto;
+                        padding: 20px 0 0 0;
+                    }
+
+                    .form-check-input {
+                        margin-top: 2px;
+                    }
+
+                    .form-check-label {
+                        font-size: 14px;
+                        color: #000000;
+                        font-weight: 700;
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        text-transform: uppercase;
+
+                        @media (max-width: 768px) {
+                            font-size: 12px;
+                        }
+
+                        @media (max-width: 375px) {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            .group {
+                @media (max-width: 768px) {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 48%;
+                    margin: 0 auto;
+                }
+
+                p {
+                    margin: 50px 0 0 0;
+                    font-size: 24px;
+                    color: #000000;
+                    font-weight: 400;
+                    font-family: 'PT Sans Narrow', sans-serif;
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        width: 50%;
+                        margin: 0 auto;
+                        padding: 50px 0 0 0;
+                    }
+
+                    @media (max-width: 375px) {
+                        font-size: 15px;
+                    }
+                }
+
+                .formTwo {
+                    margin: 20px 0 0 0;
+
+                    @media (max-width: 768px) {
+                        width: 50%;
+                        margin: 0 auto;
+                        padding: 20px 0 0px 0;
+                    }
+
+                    .form-check-input {
+                        margin-top: 2px;
+                    }
+
+                    .form-check-label {
+                        font-size: 14px;
+                        color: #000000;
+                        font-weight: 700;
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        text-transform: uppercase;
+
+                        @media (max-width: 768px) {
+                            font-size: 12px;
+                        }
+
+                        @media (max-width: 375px) {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            .openShop {
+                margin: 50px 0 0 0;
+                display: block;
+                height: 43px;
+                width: 112px;
+                background-color: #000000;
+                line-height: 43px;
+                font-size: 19px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: 'PT Sans Narrow', sans-serif;
+
+                @media (max-width: 768px) {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                &:hover {
+                    background-color: #292929;
+                }
+            }
+        }
+
+        .col-9 {
+            margin: 40px 0 0px 0;
+
+            @media (max-width: 768px) {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            .buy {
+                display: block;
+                width: 30.33%;
+                margin-right: 3%;
+                min-height: 60px;
+                margin: 10px 0 10px 0;
+                box-shadow: 0 0 30px 2px #d1ceca;
+                background-color: #f0efef;
+
+                @media (max-width: 600px) {
+                    width: 40%;
+                }
+
+                @media (max-width: 500px) {
+                    width: 48%;
+                }
+
+                .photo {
+                    display: block;
+                    position: relative;
+                    max-height: 163px;
+                    width: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                .buyProd {
+                    margin: 5px 0 10px 0;
+                    line-height: 23px;
+                    font-size: 16px;
+                    color: #000000;
+                    font-weight: 700;
+                    font-family: 'PT Sans Narrow', sans-serif;
+                    max-width: 100%;
+                    min-height: 50px;
+
+                    @media (max-width: 600px) {
+                        font-size: 12px;
+                    }
+
+                    @media (max-width: 329px) {
+                        font-size: 11px;
+                    }
+                }
+
+                .magazin {
+                    margin: 0 0 10px 0;
+                    display: block;
+                    letter-spacing: -.36em;
+                    font-size: 0;
+                    max-width: 180px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .price {
+                        display: inline-block;
+                        height: 40px;
+                        width: 50%;
+                        background-color: #d1d1d1;
+                        pointer-events: none;
+                        margin: 0px 0 0 0px;
+                        letter-spacing: normal;
+
+                        p {
+                            color: #000000;
+                            font-size: 18px;
+                            line-height: 40px;
+                            text-align: center;
+                            font-family: 'PT Sans Narrow', sans-serif;
+
+                            @media (max-width: 600px) {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .click {
+                        display: inline-block;
+                        height: 40px;
+                        width: 50%;
+                        background-color: #000000;
+                        margin: 0px 0 0 0px;
+                        letter-spacing: normal;
+                        font-size: 5px;
+
+                        &:hover {
+                            background-color: #4d4c4c;
+                        }
+
+                        p {
+                            color: #ffffff;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            line-height: 40px;
+                            text-align: center;
+                            font-family: 'PT Sans Narrow', sans-serif;
+
+                            @media (max-width: 600px) {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-12 {
+            display: block;
+
+            ul {
+                display: block;
+                margin: 50px 0 10px 0;
+
+                li {
+                    display: block;
+                    position: relative;
+
+                    a {
+                        height: 40px;
+                        width: 40px;
+                        background-color: #000000;
+                        margin: 0 5px 0 5px;
+                        line-height: 40px;
+                        font-size: 18px;
+                        font-family: 'PT Sans Narrow', sans-serif;
+                        color: #ffffff;
+                    }
+
+                    .aTwo {
+                        background-color: #4d4c4c;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}
